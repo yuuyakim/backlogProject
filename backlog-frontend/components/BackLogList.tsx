@@ -2,22 +2,24 @@ import styled from "styled-components";
 import BackLogItem from "./BackLogItem";
 const BackLogList = () => {
   return (
-    <BackLogListStyle>
-      <BackLogItem title="hoge" body="fugafuga"/>
-      <Hoge>a</Hoge>
-      <BackLogItem title="uooooooooo" body="waaaaaaaaaaaaa"/>
-    </BackLogListStyle>
+    <BackLogListWrapper>
+      <BackLogListStyle>
+        <BackLogItem title="hoge" body="fugafuga"/>
+        <BackLogItem title="uooooooooo" body="waaaaaaaaaaaaa"/>
+      </BackLogListStyle>
+    </BackLogListWrapper>
   )
 }
 
+const BackLogListWrapper = styled.div`
+  background-color: white;
+  border: 1px solid red;
+`
+
 const BackLogListStyle = styled.ul`
   display: block;
-  /* width: 30%; */
+  width: 400px;
   background-color: white;
-`
-const Hoge = styled.div`
-  display: block;
-  background-color: blue;
 `
 
 export default BackLogList;

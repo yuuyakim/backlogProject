@@ -1,12 +1,17 @@
+import styled from "styled-components";
 import BackLogList from "./BackLogList";
 
 const BackLogContainer = () => {
   return (
-    <div>
-      <h1>backlogList</h1>
+    <BackLogContainerStyle>
       <BackLogList/>
-    </div>
+    </BackLogContainerStyle>
   );
 }
+
+const BackLogContainerStyle = styled.div`
+  height: inherit;
+  width: 500px;
+`
 
 export default BackLogContainer;
